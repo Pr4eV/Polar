@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Polar API Managment Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/* 
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: url('https://statics.doctoreto.com/preset:sharp/resize:fill:300:300:0/gravity:sm/plain/s3://drto/avatar/doctor/2023/7/hOjVM8f6R5OePswYNdnhCaUyxd3c2O3dnDYHIUCM.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      direction: rtl;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    } */
+
+
+body {
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  background: url('https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc4/Polar-Flow-TrainingPeaks-integration.jpeg') no-repeat center center fixed;
+  background-size: cover; /* تصویر تمام صفحه را پر می‌کند */
+  background-color: #f5f5f5; /* Fallback رنگ اگر تصویر لود نشد */
+  height: 100vh;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0; /* حاشیه‌های پیش‌فرض مرورگر را حذف می‌کند */
+  padding: 0; /* پدینگ پیش‌فرض را حذف می‌کند */
+}
+
+    /* لایه کدر روی پس‌زمینه */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      max-width: 480px;
+      width: 90%;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: #f1c40f;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ecf0f1;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      padding: 14px 30px;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      animation: bounce 2s infinite;
+    }
+
+    .btn:hover {
+      background-color: #d35400;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-8px);
+      }
+      60% {
+        transform: translateY(-4px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      .btn {
+        padding: 12px 24px;
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Polar API!</h1>
+    <p>Smartwatch API Management Dashboard</p>
+    <button class="btn" onclick="window.location.href='/api-docs'">API Documentation</button>
+  </div>
+</body>
+</html>
